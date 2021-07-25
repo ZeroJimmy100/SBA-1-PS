@@ -1,0 +1,110 @@
+.bg
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(136, 136, 136);
+}
+
+.navBar
+{
+    width: 100%;
+    height: 15%;
+    background-color: white;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.logo
+{
+    width: 80px;
+    height: 100px;
+}
+
+.logo:active
+{
+    background-color: red;
+    border-radius: 50%;
+}
+
+#linkOne
+{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#linkOne:hover
+{
+    background-color: rgba(247, 114, 114, 0.432);
+    border-radius: 30%;
+}
+
+#linkTwo
+{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#linkTwo:hover
+{
+    background-color: rgba(247, 114, 114, 0.432);
+    border-radius: 30%;
+}
+
+.form-border
+{
+    height: 500px;
+    width: 384px;
+    background-color: gray;
+    margin-left: 35%;
+    padding-top: 1%;
+    border: solid;
+}
+
+.bg-mon
+{
+    background-image: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/4-vector-illustration-of-doodle-cute-monster-background-hand-draw-pakpong-pongatichat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    height: 750px;
+    width: 100%;
+}
+
+.links
+{
+    width: 500px;
+    display: inline-block;
+    text-align: right;
+    margin-top: 21px;
+    position: absolute;
+    right: 0;
+}
+
+.headerBox
+{
+    text-align: center;
+}
+
+.MascotMonster
+{
+    border-radius: 20%;
+}
+
+.middleBox
+{
+    text-align: center;
+}
+
+.monster1
+{
+    height: 85%;
+    width: 70%;
+    margin-top: 15%;
+}
+
+#textTitle
+{
+    font-family: 'Press Start 2P', cursive;
+    color: indianred;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}

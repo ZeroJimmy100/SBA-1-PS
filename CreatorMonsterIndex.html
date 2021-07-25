@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CreatorMonsterStyle.css"/>
+    <title>Document</title>
+
+    <style>
+        textarea
+        {
+            resize: none;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function yourMonster()
+        {
+            if(document.questionaireMonster.monsterType.value == "bashful")
+            {
+                alert("Great! your monster should be something colorful");
+            }
+            else if(document.questionaireMonster.monsterType.value == "strong")
+            {
+                alert("Great! your monster should be something big");
+            }
+            else if(document.questionaireMonster.monsterType.value == "beautiful")
+            {
+                alert("Great! your monster should be something attractive");
+            }
+            else if(document.questionaireMonster.monsterType.value == "annoying")
+            {
+                alert("Great! your monster should be something green, nobody likes green");
+            }
+            else if(document.questionaireMonster.monsterType.value == "playful")
+            {
+                alert("Great! your monster should be something child like");
+            }
+            else if(document.questionaireMonster.monsterType.value == "talented")
+            {
+                alert("Great! your monster should be something goofy");
+            }
+            else if(document.questionaireMonster.monsterType.value == "scary")
+            {
+                alert("Great! your monster should be something freaky looking");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="bg">
+        <div class="navBar">
+            <a href="CreatorMonsterIndex.html"><img class="logo" src="./logo.png" alt="logo"/></a>
+            <div class="links">
+                <a href="CreatorMonsterAddPage.html" id="linkOne"><h4>Create Monster</h4></a>
+                <a href="CreatorMonsterViewPage.html" id="linkTwo"><h4>View Monster</h4></a>
+            </div>
+        </div>
+        <div class="headerBox">
+            <h1>Welcome to where you can create your own very monster!</h1>
+            <img class="MascotMonster" src="https://pbs.twimg.com/profile_images/1092451626781163523/0YzJMi-8.jpg" alt="Cookie Monster"/>
+        </div>
+        <div class="middleBox">
+            <h2>Here you can create and view your very own monsters</h2>
+        </div>
+        <div>
+            <div style="display: inline-block; border-radius: 28%; height: 400px; width: 20%; background-color: white; margin-left: 150px; text-align: center;">
+                <img class="monster1" src="https://ih1.redbubble.net/image.500394689.6284/pp,840x830-pad,1000x1000,f8f8f8.u2.jpg" alt="monster1"/>
+            </div>
+            <div style="display: inline-block; border-radius: 28%; height: 400px; width: 20%; background-color: white; margin-left: 50px; text-align: center;">
+                <img class="monster1" src="https://i0.wp.com/subearthancottage.com/wp-content/uploads/2020/09/Friendly-Monster.png?fit=1920%2C2028&ssl=1" alt="monster2"/>
+            </div>
+            <div style="display: inline-block; border-radius: 28%; height: 400px; width: 20%; background-color: white; margin-left: 50px; text-align: center;">
+                <img class="monster1" src="https://res.cloudinary.com/teepublic/image/private/s--KEAvzr8D--/t_Resized%20Artwork/c_fit,g_north_west,h_954,w_954/co_36538b,e_outline:48/co_36538b,e_outline:inner_fill:48/co_ffffff,e_outline:48/co_ffffff,e_outline:inner_fill:48/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_auto,h_630,q_90,w_630/v1541871461/production/designs/3479036_0.jpg" alt="monster1"/>
+            </div>
+        </div>
+        <div style="display: block; text-align: center;">
+            <h2>Want us to help you decide what to create?</h2>
+            <p>psssss, we'll keep it a secret between you and me. :D</p>
+        </div>
+        <div style="margin-left: 35%;">
+            <div>
+                <form action="CreatorMonsterIndex.html" name="questionaireMonster" onsubmit="return(yourMonster());" method="POST" id="form1">
+                    <table cellspacing = "2" cellpadding = "2" border = "1">
+                        <tr><td>
+                            <select name="monsterType" id="monsterType">
+                                <option value="bashful">Bashful</option>
+                                <option value="strong">Strong</option>
+                                <option value="beautiful">Beautiful</option>
+                                <option value="annoying">Annoying</option>
+                                <option value="playful">Playful</option>
+                                <option value="talented">Talented</option>
+                                <option value="scary">Scary</option>
+                              </select>
+                        </td></tr>
+                        <tr><td><textarea name = "monsterLikes" id="monsterLikes" placeholder="Enter what your monster likes"></textarea></td></tr>
+                        <tr>
+                            <td>
+                                <textarea name = "monsterDislikes" id="monsterDislikes" placeholder="Enter what your monster dislikes"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type = "text" name = "monsterFavColor" value="" id="monsterFavColor" placeholder="monster's favorite color" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Pick your monster gender</label>
+                                <input type = "radio" id="male" name = "gender" value="male"/>
+                                <label for="male">Male</label>
+                                <input type = "radio" id="female" name = "gender" value="female"/>
+                                <label for="female">Female</label>
+                                <input type = "radio" id="other" name = "gender" value="other"/>
+                                <label for="other">Other</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type = "submit" value = "Register" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

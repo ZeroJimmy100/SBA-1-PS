@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CreatorMonsterStyle.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg">
+        <div class="navBar">
+            <a href="CreatorMonsterIndex.html"><img class="logo" src="./logo.png" alt="logo"/></a>
+            <div class="links">
+                <a href="CreatorMonsterAddPage.html" id="linkOne"><h4>Create Monster</h4></a>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <h2>Ready to see your monster? Click on the button below me</h2>
+            <button id="myBtn" onclick="this.disabled = true">Show me my monster</button>
+            
+            <script src="./MonsterViewFunc.js">
+            </script>
+      
+            <img id="imgPreview" style="display:block; margin-left: 36%;" src="" alt="">
+            <h4 style="font-family: fantasy;" id="MonsterName"></h4>
+            <span id="MonsterInfo"></span>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
